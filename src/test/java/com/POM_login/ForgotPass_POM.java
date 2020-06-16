@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.Listner_Report.ExtentReport_Utility;
+import com.Listner_Report.Report_Utility;
 import com.Utility.Browser_utility;
 import com.Utility.TestBase;
 import com.relevantcodes.extentreports.LogStatus;
@@ -15,7 +15,7 @@ public class ForgotPass_POM extends TestBase{
 		TestBase.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
-	ExtentReport_Utility objectofReport = new ExtentReport_Utility();
+	Report_Utility objectofReport = new Report_Utility();
 	
 	@FindBy(xpath = "//input[@id='username']")
 	WebElement username;

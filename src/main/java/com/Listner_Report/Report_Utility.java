@@ -6,7 +6,7 @@ import java.util.Date;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 
-public class ExtentReport_Utility {
+public class Report_Utility {
 	
 	public ExtentReports reports;
 	public  ExtentTest logger;

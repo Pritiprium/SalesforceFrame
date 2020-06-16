@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="sanity_Suite" duration-ms="35891" started-at="2020-06-15T04:43:08Z" finished-at="2020-06-15T04:43:44Z">
+    <groups>
+    </groups>
+    <test name="forgot_Test" duration-ms="15579" started-at="2020-06-15T04:43:08Z" finished-at="2020-06-15T04:43:24Z">
+      <class name="com.TestScript.ForgotPass_TestScript">
+        <test-method status="PASS" signature="launchbrowsr()[pri:0, instance:com.TestScript.ForgotPass_TestScript@1f87607c]" name="launchbrowsr" is-config="true" duration-ms="11960" started-at="2020-06-15T04:43:08Z" finished-at="2020-06-15T04:43:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchbrowsr -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.TestScript.ForgotPass_TestScript@1f87607c]" name="setup" is-config="true" duration-ms="27" started-at="2020-06-15T04:43:20Z" depends-on-methods="com.Utility.TestBase.launchbrowsr" finished-at="2020-06-15T04:43:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="forgotpass()[pri:0, instance:com.TestScript.ForgotPass_TestScript@1f87607c]" name="forgotpass" duration-ms="2666" started-at="2020-06-15T04:43:20Z" finished-at="2020-06-15T04:43:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- forgotpass -->
+        <test-method status="PASS" signature="closebrowser()[pri:0, instance:com.TestScript.ForgotPass_TestScript@1f87607c]" name="closebrowser" is-config="true" duration-ms="899" started-at="2020-06-15T04:43:23Z" finished-at="2020-06-15T04:43:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+      </class> <!-- com.TestScript.ForgotPass_TestScript -->
+    </test> <!-- forgot_Test -->
+    <test name="Home_Test" duration-ms="20215" started-at="2020-06-15T04:43:24Z" finished-at="2020-06-15T04:43:44Z">
+      <class name="com.TestScript.Home_TestScript">
+        <test-method status="PASS" signature="intialsetup()[pri:0, instance:com.TestScript.Home_TestScript@7ca16adc]" name="intialsetup" is-config="true" duration-ms="20" started-at="2020-06-15T04:43:08Z" finished-at="2020-06-15T04:43:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- intialsetup -->
+        <test-method status="PASS" signature="launchbrowsr()[pri:0, instance:com.TestScript.Home_TestScript@7ca16adc]" name="launchbrowsr" is-config="true" duration-ms="9309" started-at="2020-06-15T04:43:24Z" finished-at="2020-06-15T04:43:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchbrowsr -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.TestScript.Home_TestScript@7ca16adc]" name="setup" is-config="true" duration-ms="2" started-at="2020-06-15T04:43:33Z" depends-on-methods="com.Utility.TestBase.launchbrowsr" finished-at="2020-06-15T04:43:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="homepage()[pri:0, instance:com.TestScript.Home_TestScript@7ca16adc]" name="homepage" duration-ms="10033" started-at="2020-06-15T04:43:33Z" finished-at="2020-06-15T04:43:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homepage -->
+        <test-method status="PASS" signature="closebrowser()[pri:0, instance:com.TestScript.Home_TestScript@7ca16adc]" name="closebrowser" is-config="true" duration-ms="870" started-at="2020-06-15T04:43:43Z" finished-at="2020-06-15T04:43:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+      </class> <!-- com.TestScript.Home_TestScript -->
+    </test> <!-- Home_Test -->
+  </suite> <!-- sanity_Suite -->
+</testng-results>

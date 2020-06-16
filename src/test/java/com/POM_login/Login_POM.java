@@ -8,15 +8,14 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.Utility.TestBase;
 
-public class Login_POM extends TestBase{
-	//Logger log = new Logger(getClass().getSimpleName());
-	
+public class Login_POM extends TestBase {
+	// Logger log = new Logger(getClass().getSimpleName());
+
 	public Login_POM(WebDriver driver) {
-		TestBase.driver =driver;
+		TestBase.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
-	//Logger log = new Logger(getClass().getSimpleName());
-	
+
 	@FindBy(xpath = "//input[@id='username']")
 	WebElement username;
 
@@ -26,13 +25,13 @@ public class Login_POM extends TestBase{
 	@FindBy(xpath = "//input[@id='Login']")
 	WebElement lgn;
 
-	public void setcredential(String UName , String Password) {
+	public void setcredential(String UName, String Password) {
 		username.sendKeys(UName);
 		password.sendKeys(Password);
+		
+	}
+	public void loginbtn() {
 		lgn.click();
 	}
-
-	
-	
 
 }

@@ -1,0 +1,18 @@
+2020-06-15 22:27:45 INFO  Login_Testscript 43 - login success
+2020-06-15 22:27:46 INFO  Login_Testscript 37 - credendial passed
+2020-06-15 22:40:57 INFO  com.TestScript.Login_Testscript 43 - login success
+2020-06-15 22:40:59 INFO  com.TestScript.Login_Testscript 37 - credendial passed
+2020-06-15 22:51:54 INFO  Home_TestScript 29 - userid password sent in feild
+2020-06-15 22:52:04 INFO  Home_TestScript 37 - home button displayed
+2020-06-15 22:55:34 INFO  com.TestScript.Login_Testscript 43 - login success
+2020-06-15 22:55:36 INFO  com.TestScript.Login_Testscript 37 - credendial passed
+2020-06-15 23:23:59 INFO  com.TestScript.Login_Testscript 33 - logout successfully
+2020-06-15 23:48:55 INFO  com.TestScript.Login_Testscript 40 - login success
+2020-06-15 23:48:57 INFO  com.TestScript.Login_Testscript 34 - credendial passed
+2020-06-15 23:50:24 INFO  com.TestScript.Login_Testscript 40 - login success
+2020-06-15 23:50:25 INFO  com.TestScript.Login_Testscript 34 - credendial passed
+2020-06-15 23:51:45 INFO  com.TestScript.Login_Testscript 40 - login success
+2020-06-15 23:51:46 INFO  com.TestScript.Login_Testscript 34 - credendial passed
+2020-06-15 23:52:00 INFO  com.TestScript.Login_Testscript 33 - logout successfully
+2020-06-15 23:53:09 INFO  Home_TestScript 29 - userid password sent in feild
+2020-06-15 23:53:13 INFO  Home_TestScript 37 - home button displayed
