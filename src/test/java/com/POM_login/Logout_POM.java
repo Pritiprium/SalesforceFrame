@@ -15,11 +15,12 @@ import com.Utility.TestBase;
 import com.relevantcodes.extentreports.LogStatus;
 
 public class Logout_POM extends TestBase {
+
 	public Logout_POM(WebDriver driver) {
-		TestBase.driver= driver;
+		TestBase.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
-	
+
 	@FindBy(xpath = "//input[@id='username']")
 	WebElement username;
 
@@ -28,41 +29,31 @@ public class Logout_POM extends TestBase {
 
 	@FindBy(xpath = "//input[@id='Login']")
 	WebElement lgn;
-	
+
 	@FindBy(xpath = "//span[@id='userNavLabel']")
 	WebElement userdropdown;
-	
+
 	@FindBy(xpath = "//a[contains(text(),'Logout')]")
 	WebElement logoutBtn;
-	
+
 	Report_Utility obreport = new Report_Utility();
-	
-	public void setcredential(String UName , String Password) {		
+
+	public void setcredential(String UName, String Password) {
 		username.sendKeys(UName);
 		password.sendKeys(Password);
 	}
-//		obreport.CreateReport();
-//		obreport.CreatTest("report");
-//		obreport.logger.log(LogStatus.INFO,"login Successfull");
-		
+
 	public void login_Button_clicked() {
 		lgn.click();
 	}
+
 	public void logouttab() {
-		Browser_utility.waitforVisiblity(userdropdown);		
+		Browser_utility.waitforVisiblity(userdropdown);
 		userdropdown.click();
-		Browser_utility.waitforVisiblity(logoutBtn);		
-//			String actual = logoutBtn.getText();
-//			logoutBtn.isDisplayed();
-//			assertEquals(actual, "Logout");
-//			System.out.println(logoutBtn.getText());
-		//driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-			logoutBtn.click();
-//			obreport.logger.log(LogStatus.INFO,"logout Successfully");
-//			obreport.EndTestCase();
-//			obreport.EndReport();
-		
-		
+		Browser_utility.waitforVisiblity(logoutBtn);
+		// driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		logoutBtn.click();
+
 	}
 
 }

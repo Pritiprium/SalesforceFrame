@@ -13,6 +13,7 @@ import com.Utility.TestBase;
 @Listeners(com.Listner_Report.TestListner.class)
 
 public class Logout_TestScript extends TestBase {
+
 	Logger log = Logger.getLogger(Login_Testscript.class);
 	Logout_POM objectOfLogout;
 

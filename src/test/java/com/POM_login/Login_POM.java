@@ -9,7 +9,6 @@ import org.openqa.selenium.support.PageFactory;
 import com.Utility.TestBase;
 
 public class Login_POM extends TestBase {
-	// Logger log = new Logger(getClass().getSimpleName());
 
 	public Login_POM(WebDriver driver) {
 		TestBase.driver = driver;
@@ -28,8 +27,8 @@ public class Login_POM extends TestBase {
 	public void setcredential(String UName, String Password) {
 		username.sendKeys(UName);
 		password.sendKeys(Password);
-		
 	}
+
 	public void loginbtn() {
 		lgn.click();
 	}

@@ -14,8 +14,8 @@ import com.relevantcodes.extentreports.LogStatus;
 @Listeners(com.Listner_Report.TestListner.class)
 
 public class Home_TestScript extends TestBase {
+	
 	Logger log = Logger.getLogger(getClass().getSimpleName());
-
 	Home_POM objectOfHome;
 
 	@BeforeTest

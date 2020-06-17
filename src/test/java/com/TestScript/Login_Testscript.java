@@ -19,7 +19,6 @@ import com.Utility.propertyLoader;
 public class Login_Testscript extends TestBase {
 
 	Logger log = Logger.getLogger(Login_Testscript.class);
-
 	Login_POM objectOfL_POM;
 
 	@BeforeTest
@@ -31,7 +30,7 @@ public class Login_Testscript extends TestBase {
 	@Test(priority = 1)
 	public void login_To_Sfdc() {
 		objectOfL_POM.setcredential(userid, password);
-		
+
 		log.info("credendial passed");
 		assertNotNull(driver.findElement(By.xpath("//label[@class='fl pr db tn3']")));
 		assertEquals(driver.findElement(By.xpath("//label[@class='fl pr db tn3']")).getText(), "Remember me");
@@ -44,7 +43,6 @@ public class Login_Testscript extends TestBase {
 
 		log.info("login success");
 
-		
 	}
 
 }
