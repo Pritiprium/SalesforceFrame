@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Functional_Suite">
+	<test name="Login_Test">
+		<classes>
+			<class name="com.TestScript.Login_Testscript" />
+		</classes>
+	</test> <!-- Test -->
+	<test name="Forgotpass_Test">
+		<classes>
+			<class name="com.TestScript.ForgotPass_TestScript" />
+		</classes>
+	</test> <!-- Test -->
+	<test name="Home_Test">
+		<classes>
+			<class name="com.TestScript.Home_TestScript" />
+		</classes>
+	</test> <!-- Test -->
+	<test name="Logout_Test">
+		<classes>
+			<class name="com.TestScript.Logout_TestScript" />
+
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

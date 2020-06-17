@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Regression_Suite">
-  <test  name="login_Test">
-    <classes>
-      <class name="com.TestScript.Login_Testscript"/>
-      
-    </classes>
-  </test> <!-- Test -->
-  
-  <test  name="logout_Test">
-    <classes>
-      
-      <class name="com.TestScript.Logout_TestScript"/>
-    </classes>
-  </test> <!-- Test -->
+	<test name="login_Test">
+		<classes>
+			<class name="com.TestScript.Login_Testscript" />
+		</classes>
+	</test> <!-- Test -->
+	<test name="logout_Test">
+		<classes>
+
+			<class name="com.TestScript.Logout_TestScript" />
+		</classes>
+	</test> <!-- Test -->
 </suite> <!-- Suite -->

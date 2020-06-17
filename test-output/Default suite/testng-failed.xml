@@ -8,7 +8,7 @@
           <include name="settinglog4j"/>
           <include name="launchbrowsr"/>
           <include name="closebrowser"/>
-          <include name="loginbtn"/>
+          <include name="login_To_Sfdc"/>
           <include name="setup"/>
         </methods>
       </class> <!-- com.TestScript.Login_Testscript -->

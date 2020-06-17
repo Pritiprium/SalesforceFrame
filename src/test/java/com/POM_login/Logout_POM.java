@@ -40,11 +40,13 @@ public class Logout_POM extends TestBase {
 	public void setcredential(String UName , String Password) {		
 		username.sendKeys(UName);
 		password.sendKeys(Password);
-		lgn.click();
-		obreport.CreatReport();
-		obreport.CreatTest("report");
-		obreport.logger.log(LogStatus.INFO,"login Successfull");
+	}
+//		obreport.CreateReport();
+//		obreport.CreatTest("report");
+//		obreport.logger.log(LogStatus.INFO,"login Successfull");
 		
+	public void login_Button_clicked() {
+		lgn.click();
 	}
 	public void logouttab() {
 		Browser_utility.waitforVisiblity(userdropdown);		
@@ -56,9 +58,9 @@ public class Logout_POM extends TestBase {
 //			System.out.println(logoutBtn.getText());
 		//driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 			logoutBtn.click();
-			obreport.logger.log(LogStatus.INFO,"logout Successfully");
-			obreport.EndTestCase();
-			obreport.EndReport();
+//			obreport.logger.log(LogStatus.INFO,"logout Successfully");
+//			obreport.EndTestCase();
+//			obreport.EndReport();
 		
 		
 	}

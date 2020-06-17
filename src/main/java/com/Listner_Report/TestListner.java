@@ -3,39 +3,44 @@ package com.Listner_Report;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
-
 import com.Utility.Common_Utility;
+import com.Utility.TestBase;
+import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.LogStatus;
 
-public class TestListner implements ITestListener {
-	
+public class TestListner extends Report_Utility implements ITestListener {
+
 	public Report_Utility objectOfReport = new Report_Utility();
 	public Common_Utility oCmnUtil = new Common_Utility();
-	
-	public void onTestStart(ITestResult result) {
-		System.out.println(result.getName() + "  : test Started");
-		//objectOfReport.logger.log(LogStatus.INFO,"test started");
+	public static ExtentReports reports = Report_Utility.CreateReport();
 
+	public void onTestStart(ITestResult result) {
+		System.out.println(result.getMethod().getMethodName() + "  : test Started");
+		logger = reports.startTest(result.getMethod().getMethodName() + " Test Started");
 	}
 
 	public void onTestSuccess(ITestResult result) {
-		System.out.println(result.getName() + " : tset case passed");
-		//objectOfReport.logger.log(LogStatus.INFO, "test case passe");
+		System.out.println(result.getName() + " : Test case passed");
+		logger.log(LogStatus.INFO, result.getMethod().getMethodName() + "Test case Success");
 	}
 
 	public void onTestFailure(ITestResult result) {
-		System.out.println(result.getName()+ "test case failed");
+		System.out.println(result.getName() + " test case failed");
 		try {
-			oCmnUtil.Takescreenshot();
+			// oCmnUtil.Takescreenshot();
+
+			logger.log(LogStatus.FAIL, result.getMethod().getMethodName() + " Test Failed "
+					+ logger.addScreenCapture(oCmnUtil.Takescreenshot()));
+
 		} catch (Exception e) {
-			System.out.println("exception occur"+e);
-			//e.printStackTrace();
+			System.out.println("exception occur" + e);
+			// e.printStackTrace();
 		}
-		
 	}
 
 	public void onTestSkipped(ITestResult result) {
-		System.out.println(result.getName()+ ": test case skiped");
+		System.out.println(result.getName() + ": test case skiped");
+		logger.log(LogStatus.SKIP, result.getName() + " Test skipped");
 	}
 
 	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
@@ -44,13 +49,13 @@ public class TestListner implements ITestListener {
 	}
 
 	public void onStart(ITestContext context) {
-		System.out.println(context.getName()+": test case started");
-
+		System.out.println(context.getName() + ": test suite started");
+		// objectOfReport.CreateReport();
 	}
 
 	public void onFinish(ITestContext context) {
-		//objectOfReport.EndTestCase();
-		//objectOfReport.EndReport();
+		EndTestCase();
+		EndReport();
 
 	}
 

@@ -9,17 +9,17 @@ import com.Utility.TestBase;
 
 @Listeners(com.Listner_Report.TestListner.class)
 
-public class ForgotPass_TestScript extends TestBase{
-	
+public class ForgotPass_TestScript extends TestBase {
+
 	ForgotPass_POM obOfFoPOM;
-	
+
 	@BeforeTest
 	public void setup() {
 		obOfFoPOM = new ForgotPass_POM(TestBase.driver);
 	}
-	
+
 	@Test
-	public void forgotpass() {
+	public void Login_forgotPassword() {
 		obOfFoPOM.forgotpassword();
 	}
 

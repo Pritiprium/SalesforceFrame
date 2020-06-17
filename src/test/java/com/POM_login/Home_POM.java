@@ -16,7 +16,6 @@ import com.relevantcodes.extentreports.LogStatus;
 public class Home_POM extends TestBase {
 	Report_Utility obreport = new Report_Utility();
 
-
 	public Home_POM(WebDriver driver) {
 		TestBase.driver = driver;
 		PageFactory.initElements(driver, this);
@@ -38,17 +37,17 @@ public class Home_POM extends TestBase {
 		username.sendKeys(UName);
 		password.sendKeys(Password);
 		lgn.click();
-		obreport.CreatReport();
-		obreport.CreatTest("homebuttonis displayed or not");
-		obreport.logger.log(LogStatus.PASS,"login success");
+//		obreport.CreateReport();
+//		obreport.CreatTest("homebuttonis displayed or not");
+//		obreport.logger.log(LogStatus.PASS,"login success");
 	}
 
 	public void homepg() {
 		Browser_utility.waitforVisiblity(home);
-		obreport.logger.log(LogStatus.PASS, "home button is displayed");
+		// obreport.logger.log(LogStatus.PASS, "home button is displayed");
 		home.click();
-		obreport.EndTestCase();
-		obreport.EndReport();
+//		obreport.EndTestCase();
+//		obreport.EndReport();
 
 	}
 

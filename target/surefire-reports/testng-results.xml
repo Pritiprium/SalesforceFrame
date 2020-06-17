@@ -1,49 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="sanity_Suite" duration-ms="35891" started-at="2020-06-15T04:43:08Z" finished-at="2020-06-15T04:43:44Z">
+  <suite name="sanity_Suite" duration-ms="30344" started-at="2020-06-16T04:58:05Z" finished-at="2020-06-16T04:58:36Z">
     <groups>
     </groups>
-    <test name="forgot_Test" duration-ms="15579" started-at="2020-06-15T04:43:08Z" finished-at="2020-06-15T04:43:24Z">
+    <test name="forgot_Test" duration-ms="12854" started-at="2020-06-16T04:58:05Z" finished-at="2020-06-16T04:58:18Z">
       <class name="com.TestScript.ForgotPass_TestScript">
-        <test-method status="PASS" signature="launchbrowsr()[pri:0, instance:com.TestScript.ForgotPass_TestScript@1f87607c]" name="launchbrowsr" is-config="true" duration-ms="11960" started-at="2020-06-15T04:43:08Z" finished-at="2020-06-15T04:43:20Z">
+        <test-method status="PASS" signature="launchbrowsr()[pri:0, instance:com.TestScript.ForgotPass_TestScript@1ad9b8d3]" name="launchbrowsr" is-config="true" duration-ms="9733" started-at="2020-06-16T04:58:05Z" finished-at="2020-06-16T04:58:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchbrowsr -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.TestScript.ForgotPass_TestScript@1f87607c]" name="setup" is-config="true" duration-ms="27" started-at="2020-06-15T04:43:20Z" depends-on-methods="com.Utility.TestBase.launchbrowsr" finished-at="2020-06-15T04:43:20Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.TestScript.ForgotPass_TestScript@1ad9b8d3]" name="setup" is-config="true" duration-ms="31" started-at="2020-06-16T04:58:15Z" depends-on-methods="com.Utility.TestBase.launchbrowsr" finished-at="2020-06-16T04:58:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="forgotpass()[pri:0, instance:com.TestScript.ForgotPass_TestScript@1f87607c]" name="forgotpass" duration-ms="2666" started-at="2020-06-15T04:43:20Z" finished-at="2020-06-15T04:43:23Z">
+        <test-method status="PASS" signature="forgotpass()[pri:0, instance:com.TestScript.ForgotPass_TestScript@1ad9b8d3]" name="forgotpass" duration-ms="1913" started-at="2020-06-16T04:58:15Z" finished-at="2020-06-16T04:58:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- forgotpass -->
-        <test-method status="PASS" signature="closebrowser()[pri:0, instance:com.TestScript.ForgotPass_TestScript@1f87607c]" name="closebrowser" is-config="true" duration-ms="899" started-at="2020-06-15T04:43:23Z" finished-at="2020-06-15T04:43:24Z">
+        <test-method status="PASS" signature="closebrowser()[pri:0, instance:com.TestScript.ForgotPass_TestScript@1ad9b8d3]" name="closebrowser" is-config="true" duration-ms="1135" started-at="2020-06-16T04:58:17Z" finished-at="2020-06-16T04:58:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closebrowser -->
       </class> <!-- com.TestScript.ForgotPass_TestScript -->
     </test> <!-- forgot_Test -->
-    <test name="Home_Test" duration-ms="20215" started-at="2020-06-15T04:43:24Z" finished-at="2020-06-15T04:43:44Z">
+    <test name="Home_Test" duration-ms="17401" started-at="2020-06-16T04:58:18Z" finished-at="2020-06-16T04:58:36Z">
       <class name="com.TestScript.Home_TestScript">
-        <test-method status="PASS" signature="intialsetup()[pri:0, instance:com.TestScript.Home_TestScript@7ca16adc]" name="intialsetup" is-config="true" duration-ms="20" started-at="2020-06-15T04:43:08Z" finished-at="2020-06-15T04:43:08Z">
+        <test-method status="PASS" signature="settinglog4j()[pri:0, instance:com.TestScript.Home_TestScript@3cc053]" name="settinglog4j" is-config="true" duration-ms="136" started-at="2020-06-16T04:58:05Z" finished-at="2020-06-16T04:58:05Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- intialsetup -->
-        <test-method status="PASS" signature="launchbrowsr()[pri:0, instance:com.TestScript.Home_TestScript@7ca16adc]" name="launchbrowsr" is-config="true" duration-ms="9309" started-at="2020-06-15T04:43:24Z" finished-at="2020-06-15T04:43:33Z">
+        </test-method> <!-- settinglog4j -->
+        <test-method status="PASS" signature="launchbrowsr()[pri:0, instance:com.TestScript.Home_TestScript@3cc053]" name="launchbrowsr" is-config="true" duration-ms="9362" started-at="2020-06-16T04:58:18Z" finished-at="2020-06-16T04:58:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchbrowsr -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.TestScript.Home_TestScript@7ca16adc]" name="setup" is-config="true" duration-ms="2" started-at="2020-06-15T04:43:33Z" depends-on-methods="com.Utility.TestBase.launchbrowsr" finished-at="2020-06-15T04:43:33Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.TestScript.Home_TestScript@3cc053]" name="setup" is-config="true" duration-ms="2" started-at="2020-06-16T04:58:28Z" depends-on-methods="com.Utility.TestBase.launchbrowsr" finished-at="2020-06-16T04:58:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="homepage()[pri:0, instance:com.TestScript.Home_TestScript@7ca16adc]" name="homepage" duration-ms="10033" started-at="2020-06-15T04:43:33Z" finished-at="2020-06-15T04:43:43Z">
+        <test-method status="PASS" signature="login()[pri:1, instance:com.TestScript.Home_TestScript@3cc053]" name="login" duration-ms="2730" started-at="2020-06-16T04:58:28Z" finished-at="2020-06-16T04:58:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="homepage()[pri:2, instance:com.TestScript.Home_TestScript@3cc053]" name="homepage" duration-ms="4019" started-at="2020-06-16T04:58:30Z" finished-at="2020-06-16T04:58:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homepage -->
-        <test-method status="PASS" signature="closebrowser()[pri:0, instance:com.TestScript.Home_TestScript@7ca16adc]" name="closebrowser" is-config="true" duration-ms="870" started-at="2020-06-15T04:43:43Z" finished-at="2020-06-15T04:43:44Z">
+        <test-method status="PASS" signature="closebrowser()[pri:0, instance:com.TestScript.Home_TestScript@3cc053]" name="closebrowser" is-config="true" duration-ms="1274" started-at="2020-06-16T04:58:34Z" finished-at="2020-06-16T04:58:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closebrowser -->

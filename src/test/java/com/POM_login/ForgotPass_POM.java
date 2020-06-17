@@ -29,20 +29,20 @@ public class ForgotPass_POM extends TestBase{
 	
 	public void forgotpassword() {
 		username.sendKeys("priti.p@salesforce.com");
-		objectofReport.CreatReport();
-		objectofReport.CreatTest("forgotpassword");
+//		objectofReport.CreateReport();
+//		objectofReport.CreatTest("forgotpassword");
 		Browser_utility.waitforVisiblity(text);
 		
-		if(text.getText().trim().equals("Forgot Your Password?")) {
-			objectofReport.logger.log(LogStatus.INFO, "test Step is right");		
-		}
-		else {
-			objectofReport.logger.log(LogStatus.FAIL, "test step fail");
-		}
+//		if(text.getText().trim().equals("Forgot Your Password?")) {
+//			objectofReport.logger.log(LogStatus.INFO, "test Step is right");		
+//		}
+//		else {
+//			objectofReport.logger.log(LogStatus.FAIL, "test step fail");
+//		}
 		Browser_utility.waitforVisiblity(forgotPaas);
 		forgotPaas.click();
-		objectofReport.EndTestCase();
-		objectofReport.EndReport();
+//		objectofReport.EndTestCase();
+//		objectofReport.EndReport();
 		
 	}
 

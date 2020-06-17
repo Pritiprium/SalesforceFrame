@@ -8,16 +8,27 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">sanity_Suite</th></tr>
-<tr><td><a href="#t0">forgot_Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">10,427</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">Home_Test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">15,778</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">3</th><th class="num">0</th><th class="num">0</th><th class="num">26,205</th><th colspan="2"></th></tr>
+<tr><th colspan="7">Functional_Suite</th></tr>
+<tr><td><a href="#t0">Login_Test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">11,500</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Forgotpass_Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">9,162</td><td></td><td></td></tr>
+<tr><td><a href="#t2">Home_Test</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">1</td><td class="num">16,143</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t3">Logout_Test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">16,766</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">7</th><th class="num">0</th><th class="num attn">1</th><th class="num">53,571</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">sanity_Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">forgot_Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.TestScript.ForgotPass_TestScript</td><td><a href="#m0">forgotpass</a></td><td rowspan="1">1592283175683</td><td rowspan="1">1259</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">Home_Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.TestScript.Home_TestScript</td><td><a href="#m1">homepage</a></td><td rowspan="1">1592283189120</td><td rowspan="1">3918</td></tr><tr class="passedeven"><td><a href="#m2">login</a></td><td rowspan="1">1592283185225</td><td rowspan="1">3892</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Functional_Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Login_Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.TestScript.Login_Testscript</td><td><a href="#m0">login_Button_clicked</a></td><td rowspan="1">1592366554992</td><td rowspan="1">1587</td></tr><tr class="passedeven"><td><a href="#m1">login_To_Sfdc</a></td><td rowspan="1">1592366554515</td><td rowspan="1">471</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Forgotpass_Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.TestScript.ForgotPass_TestScript</td><td><a href="#m2">Login_forgotPassword</a></td><td rowspan="1">1592366565492</td><td rowspan="1">781</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">Home_Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.TestScript.Home_TestScript</td><td><a href="#m3">homepage_displayed</a></td><td rowspan="1">1592366581603</td><td rowspan="1">158</td></tr><tr><th colspan="4">Home_Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.TestScript.Home_TestScript</td><td><a href="#m4">login_forHomepage</a></td><td rowspan="1">1592366574888</td><td rowspan="1">6713</td></tr></tbody>
+<tbody id="t3"><tr><th colspan="4">Logout_Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">com.TestScript.Logout_TestScript</td><td><a href="#m5">Button_clicked</a></td><td rowspan="1">1592366591805</td><td rowspan="1">7095</td></tr><tr class="passedeven"><td><a href="#m6">login_forlogoutPage</a></td><td rowspan="1">1592366591309</td><td rowspan="1">495</td></tr><tr class="passedeven"><td><a href="#m7">logout</a></td><td rowspan="1">1592366598903</td><td rowspan="1">447</td></tr></tbody>
 </table>
-<h2>forgot_Test</h2><h3 id="m0">com.TestScript.ForgotPass_TestScript#forgotpass</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Home_Test</h2><h3 id="m1">com.TestScript.Home_TestScript#homepage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.TestScript.Home_TestScript#login</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Login_Test</h2><h3 id="m0">com.TestScript.Login_Testscript#login_Button_clicked</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.TestScript.Login_Testscript#login_To_Sfdc</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Forgotpass_Test</h2><h3 id="m2">com.TestScript.ForgotPass_TestScript#Login_forgotPassword</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Home_Test</h2><h3 id="m3">com.TestScript.Home_TestScript#homepage_displayed</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Ho] but found [Home]
+	at com.TestScript.Home_TestScript.homepage_displayed(Home_TestScript.java:35)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.TestScript.Home_TestScript#login_forHomepage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Logout_Test</h2><h3 id="m5">com.TestScript.Logout_TestScript#Button_clicked</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.TestScript.Logout_TestScript#login_forlogoutPage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.TestScript.Logout_TestScript#logout</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
