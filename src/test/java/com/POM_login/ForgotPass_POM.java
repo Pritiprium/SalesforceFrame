@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.Listner_Report.Report_Utility;
+import com.Listner.Report_Utility;
 import com.Utility.Browser_utility;
 import com.Utility.TestBase;
 import com.relevantcodes.extentreports.LogStatus;
@@ -27,12 +27,13 @@ public class ForgotPass_POM extends TestBase {
 	@FindBy(xpath = "//a[contains(text(),'Forgot Your Password?')]")
 	WebElement text;
 
-	public void forgotpassword() {
+	public WebElement forgotpassword() {
+		Browser_utility.waitforVisiblity(username);
 		username.sendKeys("priti.p@salesforce.com");
-		Browser_utility.waitforVisiblity(text);
+		// Browser_utility.waitforVisiblity(text);
 		Browser_utility.waitforVisiblity(forgotPaas);
-		forgotPaas.click();
-
+		// forgotPaas.click();
+		return forgotPaas;
 	}
 
 }

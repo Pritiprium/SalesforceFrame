@@ -6,11 +6,7 @@
 			<class name="com.TestScript.Login_Testscript" />
 		</classes>
 	</test> <!-- Test -->
-	<test name="Forgotpass_Test">
-		<classes>
-			<class name="com.TestScript.ForgotPass_TestScript" />
-		</classes>
-	</test> <!-- Test -->
+	
 	<test name="Home_Test">
 		<classes>
 			<class name="com.TestScript.Home_TestScript" />
@@ -19,7 +15,11 @@
 	<test name="Logout_Test">
 		<classes>
 			<class name="com.TestScript.Logout_TestScript" />
-
+		</classes>
+	</test> <!-- Test -->
+	<test name="Forgotpass_Test">
+		<classes>
+			<class name="com.TestScript.ForgotPass_TestScript" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

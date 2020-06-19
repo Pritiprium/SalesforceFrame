@@ -15,7 +15,7 @@ import com.POM_login.Login_POM;
 import com.Utility.TestBase;
 import com.Utility.propertyLoader;
 
-@Listeners(com.Listner_Report.TestListner.class)
+@Listeners(com.Listner.TestListner.class)
 public class Login_Testscript extends TestBase {
 
 	Logger log = Logger.getLogger(Login_Testscript.class);
@@ -27,22 +27,27 @@ public class Login_Testscript extends TestBase {
 
 	}
 
-	@Test(priority = 1)
+	@Test(priority = 2)
 	public void login_To_Sfdc() {
-		objectOfL_POM.setcredential(userid, password);
-
-		log.info("credendial passed");
-		assertNotNull(driver.findElement(By.xpath("//label[@class='fl pr db tn3']")));
+		objectOfL_POM.set_ValidCredential(userid, password);
+		log.info("Valid Credendial passed");
+		// assertNotNull(driver.findElement(By.xpath("//label[@class='fl pr db
+		// tn3']")));
 		assertEquals(driver.findElement(By.xpath("//label[@class='fl pr db tn3']")).getText(), "Remember me");
-		assertNotEquals(driver.findElement(By.xpath("//label[@class='fl pr db tn3']")).getText(), "abc");
+		// assertNotEquals(driver.findElement(By.xpath("//label[@class='fl pr db
+		// tn3']")).getText(), "abc");
 	}
 
-	@Test(priority = 2)
+	@Test(priority = 3)
 	public void login_Button_clicked() {
 		objectOfL_POM.loginbtn();
-
 		log.info("login success");
-
 	}
 
+	@Test(priority = 1)
+	public void wrong_Credential() {
+		objectOfL_POM.Invalid_Credential(Invalid_Userid, Invalid_Password);
+		log.info("Invalid Credential passed");
+		log.info("Login FAiled");
+	}
 }

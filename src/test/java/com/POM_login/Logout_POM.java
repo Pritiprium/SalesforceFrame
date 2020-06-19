@@ -9,7 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.Listner_Report.Report_Utility;
+import com.Listner.Report_Utility;
 import com.Utility.Browser_utility;
 import com.Utility.TestBase;
 import com.relevantcodes.extentreports.LogStatus;
@@ -39,7 +39,9 @@ public class Logout_POM extends TestBase {
 	Report_Utility obreport = new Report_Utility();
 
 	public void setcredential(String UName, String Password) {
+		Browser_utility.waitforVisiblity(username);
 		username.sendKeys(UName);
+		Browser_utility.waitforVisiblity(password);
 		password.sendKeys(Password);
 	}
 
@@ -47,13 +49,12 @@ public class Logout_POM extends TestBase {
 		lgn.click();
 	}
 
-	public void logouttab() {
+	public WebElement logouttab() throws Exception {
 		Browser_utility.waitforVisiblity(userdropdown);
 		userdropdown.click();
 		Browser_utility.waitforVisiblity(logoutBtn);
 		// driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		logoutBtn.click();
-
+		return logoutBtn;
 	}
 
 }

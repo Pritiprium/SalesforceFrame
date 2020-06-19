@@ -14,8 +14,10 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Browser_utility {
 
-	public String userid;
-	public String password;
+//	public String Valid_userid;
+//	public String Valid_password;
+//	public String Invalid_userid;
+//	public String Invalid_password;
 
 	public void launchbrwsr() {
 		WebDriverManager.chromedriver().setup();
@@ -30,17 +32,20 @@ public class Browser_utility {
 
 	}
 
-	public void dataforCredential() throws Exception {
-		String sfile = System.getProperty("user.dir") + "\\src\\main\\resources\\DataforCredn.xls";
-		FileInputStream fi = new FileInputStream(sfile);
-		HSSFWorkbook excelbook = new HSSFWorkbook(fi);
-		HSSFSheet excelsheet = excelbook.getSheet("Sheet1");
-		HSSFRow row1 = excelsheet.getRow(0); // \\src\\main\\java\\com\\Utility\\DataforCredn.xls
-		HSSFRow row2 = excelsheet.getRow(1);
-		userid = row1.getCell(1).getStringCellValue();
-		password = row2.getCell(1).getStringCellValue();
-
-	}
+//	public void dataforCredential() throws Exception {
+//		String sfile = System.getProperty("user.dir") + "\\src\\main\\resources\\DataforCredn.xls";
+//		FileInputStream fi = new FileInputStream(sfile);
+//		HSSFWorkbook excelbook = new HSSFWorkbook(fi);
+//		HSSFSheet excelsheet = excelbook.getSheet("Sheet1");
+//		HSSFRow row1 = excelsheet.getRow(0); // \\src\\main\\java\\com\\Utility\\DataforCredn.xls
+//		HSSFRow row2 = excelsheet.getRow(1);
+//		HSSFRow row3 = excelsheet.getRow(2);
+//		HSSFRow row4 = excelsheet.getRow(3);
+//		Valid_userid = row1.getCell(1).getStringCellValue();
+//		Valid_password = row2.getCell(1).getStringCellValue();
+//		Invalid_userid = row3.getCell(1).getStringCellValue();
+//		Invalid_password = row4.getCell(1).getStringCellValue();
+//	}
 
 	public void Tearoff() {
 		TestBase.driver.quit();
